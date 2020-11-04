@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_Temporary_clearDatabase"
+        android:text="@string/bt_Temporary_clearDatabase"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_Temporary_showDatabase"
+        android:text="@string/bt_Temporary_showDatabase"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_Temporary_fillRecordTable"
+        android:text="@string/bt_Temporary_fillRecordTable"
+        android:textAllCaps="false"/>
+</LinearLayout>

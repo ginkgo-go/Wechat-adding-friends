@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 1,activity title-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_Statistics_title"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/azure"
+            android:textSize="30sp"
+            android:textAlignment="center">
+        </TextView>
+    </LinearLayout>
+    <!-- 2,the interface while there is no record.-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/azure"
+        android:visibility="gone"
+        android:id="@+id/ll_Statistics_blankShow">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_Statistics_blankShow"
+            android:textSize="20sp"
+            android:textColor="@color/purple">
+        </TextView>
+    </LinearLayout>
+    <!-- 3,the interface while there do have records.-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_Statistics_contentShow"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/azure">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/purple"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_Statistics_operationTime">
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/purple"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_Statistics_totalNumbers">
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/purple"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_Statistics_validOperations">
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/purple"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_Statistics_badNumbers">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/lv_Statistics_container_showOperationRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

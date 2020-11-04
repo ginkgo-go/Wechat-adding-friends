@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.impeach.peony">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/horse01"
+        android:roundIcon="@drawable/horse01"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".Iamaservice"
+            android:enabled="true"
+            android:exported="true"
+            android:label="@string/manifest_serviceLable"
+            android:description="@string/manifest_serviceDescription"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/service_for_wechat" />
+        </service>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivationCode"
+            android:label="Activation code management"></activity>
+        <activity
+            android:name=".AmountEachRound"
+            android:label="Each round amount management"></activity>
+        <activity
+            android:name=".Settings"
+            android:label="Settings"></activity>
+        <activity
+            android:name=".Statistics"
+            android:label="Statistics"></activity>
+        <activity
+            android:name=".Temporary"
+            android:label="it will be deleted"></activity>
+        <activity
+            android:name=".UserManual"
+            android:label="User manual"></activity>
+        <activity
+            android:name=".BaseActivity"
+            android:label="base activity"></activity>
+    </application>
+
+</manifest>

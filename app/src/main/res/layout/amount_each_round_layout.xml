@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 1,activity title-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_AmountEachRound_title"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/azure"
+            android:textSize="30sp"
+            android:textAlignment="center">
+        </TextView>
+    </LinearLayout>
+    <!-- 2,show current amount-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/azure">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple"
+            android:textSize="20sp"
+            android:text="@string/tv_AmountEachRound_currentAmount">
+        </TextView>
+        <LinearLayout
+            android:id="@+id/ll_AmountEachRound_currentAmount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 3,modify the amount-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/azure">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_AmountEachRound_modifyAmount">
+        </TextView>
+        <EditText
+            android:id="@+id/et_AmountEachRound_modifyAmount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:inputType="number"
+            android:maxLength="2">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_AmountEachRound_modifyAmount"
+            android:text="@string/bt_AmountEachRound_modifyAmount"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Peony</string>
+    <string name="tv_MainActivity_title">WechatFriends</string>
+    <string name="tv_MainActivity_putInActivationCode">请输入激活码：</string>bt_MainActivity_putInActivationCode
+    <string name="bt_MainActivity_putInActivationCode">激活</string>
+    <string name="tv_MainActivity_tipsBeforeActivation01">本App需要激活才能使用。使用测试激活码aaaabbbbccccdddd，可以试用3天。但是每台设备仅可试用1次。</string>
+    <string name="tv_MainActivity_tipsBeforeActivation02">请注意：输入激活码之前请手动打开该APP的权限。包括“获取手机信息”和“读写手机存储”。否则可能会造成App闪退。</string>
+    <string name="ll_MainActivity_tipsBeforeActivation">如果您希望购买正式的激活码，请联系%1$s：%2$s。</string>
+    <string name="bt_MainActivity_settings">设置</string>
+    <string name="bt_MainActivity_beginWork">开始添加好友</string>
+    <string name="bt_Temporary_clearDatabase">clear database</string>
+    <string name="bt_Temporary_showDatabase">show database</string>
+    <string name="bt_Temporary_fillRecordTable">fill recordTable</string>
+    <string name="et_MainActivity_putInActivationCode">激活码为16位数字和字母组合</string>
+    <string name="ll_MainActivity_tipsAfterActivation">您的设备已激活，有效期至：%1$s。如有任何问题，请联系%2$s：%3$s</string>
+    <string name="tv_Settings_title">设置</string>
+    <string name="bt_Settings_amountOfFriendsForEachRound">每轮加人数量</string>
+    <string name="bt_Settings_activationCode">输入激活码</string>
+    <string name="bt_Settings_userManual">使用说明</string>
+    <string name="ll_Settings_amountOfFriendsForEachRound">当前设置每轮加人数量为：%1$s人。</string>
+    <string name="ll_Settings_activationCode">现有激活码有效期至：%1$s。</string>
+    <string name="ll_Settings_currentlyValidNumberAmount">当前可用号码为：%1$d个。</string>
+    <string name="bt_Settings_insertData">导入TXT中的号码</string>
+    <string name="tv_AmountEachRound_title">每轮加人数量</string>
+    <string name="tv_AmountEachRound_currentAmount">当前每轮加人数量：</string>
+    <string name="tv_AmountEachRound_modifyAmount">修改为：</string>
+    <string name="bt_AmountEachRound_modifyAmount">保存修改</string>
+    <string name="tv_ActivationCode_activationCode">激活码</string>
+    <string name="tv_ActivationCode_activationDate">激活日</string>
+    <string name="tv_ActivationCode_codeDuration">有效期</string>
+    <string name="tv_ActivationCode_codeStartDate">开始日期</string>
+    <string name="tv_ActivationCode_codeExpiredDate">过期日期</string>
+    <string name="tv_ActivationCode_title">激活码管理</string>
+    <string name="tv_ActivationCode_putInNewCode">请输入激活码：</string>
+    <string name="bt_ActivationCode_putInNewCode">激活</string>
+    <string name="tv_Statistics_title">查看统计数据</string>
+    <string name="tv_Statistics_blankShow">当前没有任何添加好友的操作记录。</string>
+    <string name="tv_Statistics_operationTime">操作时间：</string>
+    <string name="tv_Statistics_totalNumbers">号码总数</string>
+    <string name="tv_Statistics_validOperations">有效添加</string>
+    <string name="tv_Statistics_badNumbers">号码不存在</string>
+    <string name="bt_Settings_statistics">数据统计</string>
+    <string name="tv_Settings_statistics">显示最近10次添加好友的统计数据。</string>
+    <string name="tv_UserManual_content01">1,导入号码之前，请先将本APP的“读写手机存储”权限打开，否则会导入失败。</string>
+    <string name="tv_UserManual_content02">2,把要添加的号码（微信号、手机号等）放到一个TXT文件中（每行一个号码），然后将TXT文件命名为：numbers。把numbers.txt放到手机的根目录中。</string>
+    <string name="tv_UserManual_content03">3,每次导入的数据量最好控制在1000条左右，等添加得差不多了，再继续导入。</string>
+    <string name="tv_UserManual_content04">4,添加好友的过程中，如果有电话呼入，会中断进程，过后需要手动重新开始。</string>
+    <string name="tv_UserManual_content05">5,点击“开始添加”前，请把微信关闭再重新打开；点击“开始添加”后，如果没有跳转到微信，请手动打开微信，程序将会开始工作。</string>
+    <string name="tv_UserManual_content06">6,有时候点击“开始添加”并跳转到微信后，没有任何反应，请进入到无障碍设置页面，把本App的设置，先关上，再重新打开。</string>
+    <string name="manifest_serviceDescription">WechatFriends needs the authorization to launch the operation.</string>
+    <string name="manifest_serviceLable">微信自动添加好友</string>
+    <string name="tv_UserManual_title">使用指南</string>
+    <string name="bt_MainActivity_re_activate">取回激活码</string>
+    <string name="tv_MainActivity_tipsForReActivate">如果当前设备曾经有效激活，且目前仍在有效期内，但卸载重装了本APP，可以取回激活码，包括正式激活码和测试激活码。</string>
+
+
+
+</resources>
